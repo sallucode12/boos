@@ -8,18 +8,25 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
   <link rel="stylesheet" href="about.html">
-  <style>
+  <style> 
+  #po{
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+
+  }
     @media (max-width: 380px) {
       #card-text2 {
         display: none;
       }
 
     }
+
   </style>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-dark ">
+  <nav id="po" class="navbar navbar-expand-lg bg-dark ">
     <div class="container-fluid">
       <a class="navbar-brand text-light" href="#">i-Looply </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -135,7 +142,7 @@
     </div>
     <div class="carousel-inner ">
       <div class="carousel-item active">
-        <video style="width: 100%;" autoplay muted loop>
+        <video style="width: 100%; height: 85vh; object-fit: cover;" autoplay muted loop>
           <source src="video/programming.mp4" type="video/mp4">
         </video>
         <div class="carousel-caption d-none d-md-block">
@@ -236,8 +243,8 @@
       </div>
     </div>
   </div>
-  <div class="card bg-dark text-white ">
-    <img  src="img/aii.avif" class="card-img w-100 h-50" alt="Stony Beach" />
+  <div id="img" class="card bg-dark text-white  ">
+    <img  src="img/aii.avif" class="card-img w-100 " alt="Stony Beach" />
     <div class="card-img-overlay ">
       <h5 class="card-title">Artificial Intelligence</h5>
       <p class="card-text ">
